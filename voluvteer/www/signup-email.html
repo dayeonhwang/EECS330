@@ -7,7 +7,6 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/"
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -34,13 +33,26 @@
         <br/>
         <br/>
         <div class="row">
-          <div class="col col-50">
-            <img src="img/social-facebook-box-blue-icon.png">
-          </div>
-          <div class="col col-50">
-            <a href="signup-email.html">
-              <img src="img/email-icon.png">
-            </a>
+          <div class="list">
+            <label class="item item-input">
+                <span class="input-label">First Name</span>
+                <input type="text">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Last Name</span>
+                <input type="text">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Email</span>
+                <input type="text">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Password</span>
+                <input type="password">
+            </label> 
+            <button class="button button-large button-positive">
+              Submit
+            </button>
           </div>
         </div>
       </ion-content>
