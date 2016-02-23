@@ -1,6 +1,15 @@
-<ion-view view-title="Dashboard">
+<ion-view view-title="Location">
   <ion-content class="padding">
-    <h2>Choose Location</h2>
-    <p> Test</p>
+    <ion-google-place placeholder="Your address" ng-model="yourModel" location-changed="yourLocationChangeCallback"/>
+    <label class="item item-input item-select">
+      <div class="input-label">
+      Distance
+      </div>
+      <select>
+        <option>Blue</option>
+        <option selected>Green</option>
+        <option>Red</option>
+      </select>
+    </label>
   </ion-content>
 </ion-view>
