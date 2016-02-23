@@ -60,6 +60,16 @@ angular.module('starter', ['ionic', 'ion-place-tools', 'starter.controllers', 's
       }
     })
 
+    .state('tab.getstarted', {
+      url: '/getstarted',
+      views: {
+        'tab-getstarted': {
+          templateUrl: 'templates/tab-getstarted.html',
+          controller: 'StartCtrl'
+        }
+      }
+    })
+
   .state('tab.interests', {
     url: '/interests',
     views: {

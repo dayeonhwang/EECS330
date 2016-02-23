@@ -18,3 +18,11 @@ img {
     font-style: bold;
     font-family: Verdana;
 }
+
+.interest-img {
+    z-index: 0;
+}
+
+.check-img {
+    z-index: 1;
+}
