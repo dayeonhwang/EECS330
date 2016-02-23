@@ -7,3 +7,14 @@
     width: 30%;
     height: 30%;
 }
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.interest {
+    text-align: center;
+    font-style: bold;
+    font-family: Verdana;
+}
