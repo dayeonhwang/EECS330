@@ -1,15 +1,23 @@
 <ion-view view-title="Location">
   <ion-content class="padding">
+
+  
     <ion-google-place placeholder="Your address" ng-model="yourModel" location-changed="yourLocationChangeCallback"/>
+    </ion-google-place>
+
     <label class="item item-input item-select">
-      <div class="input-label">
-      Distance
-      </div>
-      <select>
-        <option>Blue</option>
-        <option selected>Green</option>
-        <option>Red</option>
-      </select>
+        <div class="input-label">
+            Distance
+        </div>
+        <select>
+            <option selected>5 Miles</option>
+            <option >10 Miles</option>
+            <option>15 Miles</option>
+        </select>
     </label>
+
+    <br/>
+    <a href="#/tab/time" class="button icon-right ion-chevron-right button-calm col-offset-50">Next</a>
+
   </ion-content>
 </ion-view>

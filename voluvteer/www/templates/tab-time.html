@@ -1,6 +1,51 @@
-<ion-view view-title="Dashboard">
+<ion-view view-title="Time">
   <ion-content class="padding">
-    <h2>Choose Time</h2>
-    <p> Test</p>
+
+  <div class="list">
+      <label class="item item-input item-select">
+            <div class="input-label">
+                Total Time (hr / week)
+            </div>
+            <select>
+                <option selected>1 - 5 Hours</option>
+                <option >5 - 10 Hours</option>
+                <option>10 - 20 Hours</option>
+                <option>20 Hours or more</option>
+            </select>
+        </label>
+
+        <label class="item item-input item-select">
+            <div class="input-label">
+                Frequency
+            </div>
+            <select>
+                <option selected>Once a week</option>
+                <option >2 times a week</option>
+                <option>3 times a week</option>
+                <option>More than 3 times a week</option>
+            </select>
+        </label>
+
+        <div class="item range">
+        <div class="input-label">
+            Flexibility
+        </div>
+          Low
+          <input type="range" name="flexibility">
+          High
+        </div>
+    </div>
+
+    <br/>
+
+    <div class="row"> 
+    <a href="#/tab/location" class="col col-33 button icon-left ion-chevron-left button-calm">Prev</a> 
+    <a href="#/tab/time" class="col col-33 col-offset-33 button icon-right ion-chevron-right button-calm">Next</a>
+</div>
+    
+
+    
+
+
   </ion-content>
 </ion-view>
