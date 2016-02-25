@@ -52,15 +52,16 @@
     <script type="text/javascript">
       function toggleCheck(event) {
         if (event.target.className == "interest-img") {
-          imgID = event.target.id + "Check";
-
-          if (document.getElementById(imgID).style.display == "inline")
-            document.getElementById(imgID).style.display = "none";
+          var imgID = event.target.id + "Check";
+          if (document.getElementById(imgID).style.visibility == "visible")
+            document.getElementById(imgID).style.visibility = "hidden";
           else
-            document.getElementById(imgID).style.display = "inline";
-
-          event.target.parentElement.style.background = "outline";
+            document.getElementById(imgID).style.visibility = "visible";
         }
+        else if (event.target.className == "check-img") {
+          event.target.style.visibility = "hidden";
+        }
+
       }
     </script>
   </body>
