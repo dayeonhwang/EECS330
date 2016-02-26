@@ -25,19 +25,16 @@ img {
 }
 
 .interest-img {
-  z-index: 0;
   position: relative;
-  margin-left: 23%;
 }
 
 .check-img {
-    z-index: 1;
-    position: relative;
-    left: -25%;
-    height: 20%;
-    width: 20%;
+    height: 40%;
+    width: 40%;
+    display: block;
+    margin: 0 auto;
     visibility: hidden;
-
+    padding-top: 25%;
 }
 
 

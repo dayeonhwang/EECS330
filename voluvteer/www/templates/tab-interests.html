@@ -3,155 +3,119 @@
     <h2>Trending</h2>
 
     <div class="row">
-        <div class="col col-offset-25 col-33 interest">
-            <button onclick="toggleCheck(event)">
-              <img id="animals" class="interest-img" src="img/animals.png">
-              <img id="animalsCheck" class="check-img" src="img/checkmark.png"> <br>
-              Animals
-            </button>
+        <div id="animal" onclick="toggleCheck(event)" class="col col-offset-25 col-33 interest"
+             style="background-image: url('img/animals.png'); background-repeat: no-repeat; background-position: top center">
+          <img id="animalCheck" class="check-img" src="img/checkmark.png"> <br> <br>
+          Animals
         </div>
-        <div class="col col-33 interest">
-          <button onclick="toggleCheck(event)">
-            <img id="outdoors" class="interest-img" src="img/outdoors.png">
-            <img id="outdoorsCheck" class="check-img" src="img/checkmark.png"> <br>
-            Outdoors
-          </button>
+        <div id="outdoors" onclick="toggleCheck(event)" class="col col-offset-10 col-33 interest"
+             style="background-image: url('img/outdoors.png'); background-repeat: no-repeat; background-position: top center">
+          <img id="outdoorsCheck" class="check-img" src="img/checkmark.png"> <br> <br>
+          Outdoors
         </div>
     </div>
     <div class="row">
-        <div class="col col-offset-25 col-33 interest">
-          <button onclick="toggleCheck(event)">
-            <img id="technology" class="interest-img" src="img/technology.png">
-            <img id="technologyCheck" class="check-img" src="img/checkmark.png"> <br>
-            Technology
-          </button>
-        </div>
-        <div class="col col-33 interest">
-          <button onclick="toggleCheck(event)">
-            <img id="health" class="interest-img" src="img/healthcare.png">
-            <img id="healthCheck" class="check-img" src="img/checkmark.png"> <br>
-            Health
-          </button>
-        </div>
+      <div id="technology" onclick="toggleCheck(event)" class="col col-offset-25 col-33 interest"
+           style="background-image: url('img/technology.png'); background-repeat: no-repeat; background-position: top center">
+        <img id="technologyCheck" class="check-img" src="img/checkmark.png"> <br> <br>
+        Technology
+      </div>
+      <div id="health" onclick="toggleCheck(event)" class="col col-offset-10 col-33 interest"
+           style="background-image: url('img/healthcare.png'); background-repeat: no-repeat; background-position: top center">
+        <img id="healthCheck" class="check-img" src="img/checkmark.png"> <br> <br>
+        Health
+      </div>
     </div>
 
     <h2>Categories</h2>
 
     <div class="row">
-        <div class="col col-offset-25 col-33 interest">
-          <button onclick="toggleCheck(event)">
-            <img id="kids" class="interest-img" src="img/kids.png">
-            <img id="kidsCheck" class="check-img" src="img/checkmark.png"> <br>
-            Kids
-          </button>
-        </div>
-        <div class="col col-33 interest">
-          <button onclick="toggleCheck(event)">
-            <img id="environment" class="interest-img" src="img/environment.png">
-            <img id="environmentCheck" class="check-img" src="img/checkmark.png"> <br>
-            Environment
-          </button>
-        </div>
+      <div id="kids" onclick="toggleCheck(event)" class="col col-offset-25 col-33 interest"
+           style="background-image: url('img/kids.png'); background-repeat: no-repeat; background-position: top center">
+        <img id="kidsCheck" class="check-img" src="img/checkmark.png"> <br> <br>
+        Kids
+      </div>
+      <div id="envir" onclick="toggleCheck(event)" class="col col-offset-10 col-33 interest"
+           style="background-image: url('img/environment.png'); background-repeat: no-repeat; background-position: top center">
+        <img id="envirCheck" class="check-img" src="img/checkmark.png"> <br> <br>
+        Environment
+      </div>
     </div>
 
     <div class="row">
-        <div class="col col-offset-25 col-33 interest">
-          <button onclick="toggleCheck(event)">
-            <img id="tutoring" class="interest-img" src="img/tutoring.png">
-            <img id="tutoringCheck" class="check-img" src="img/checkmark.png"> <br>
-            Tutoring
-          </button>
-        </div>
-        <div class="col col-33 interest">
-          <button onclick="toggleCheck(event)">
-            <img id="hunger" class="interest-img" src="img/hunger.png">
-            <img id="hungerCheck" class="check-img" src="img/checkmark.png"> <br>
-            Hunger
-          </button>
-        </div>
+      <div id="tutoring" onclick="toggleCheck(event)" class="col col-offset-25 col-33 interest"
+           style="background-image: url('img/tutoring.png'); background-repeat: no-repeat; background-position: top center">
+        <img id="tutoringCheck" class="check-img" src="img/checkmark.png"> <br> <br>
+        Tutoring
+      </div>
+      <div id="hunger" onclick="toggleCheck(event)" class="col col-offset-10 col-33 interest"
+           style="background-image: url('img/hunger.png'); background-repeat: no-repeat; background-position: top center">
+        <img id="hungerCheck" class="check-img" src="img/checkmark.png"> <br> <br>
+        Hunger
+      </div>
     </div>
 
     <div class="row">
-        <div class="col col-offset-25 col-33 interest">
-          <button onclick="toggleCheck(event)">
-            <img id="faith" class="interest-img" src="img/faith.png">
-            <img id="faithCheck" class="check-img" src="img/checkmark.png"> <br>
-            Faith
-          </button>
-        </div>
-        <div class="col col-33 interest">
-          <button onclick="toggleCheck(event)">
-            <img id="human" class="interest-img" src="img/human.png">
-            <img id="humanCheck" class="check-img" src="img/checkmark.png"> <br>
-            Human Rights
-          </button>
-        </div>
+      <div id="faith" onclick="toggleCheck(event)" class="col col-offset-25 col-33 interest"
+           style="background-image: url('img/faith.png'); background-repeat: no-repeat; background-position: top center">
+        <img id="faithCheck" class="check-img" src="img/checkmark.png"> <br> <br>
+        Faith
+      </div>
+      <div id="human" onclick="toggleCheck(event)" class="col col-offset-10 col-33 interest"
+           style="background-image: url('img/human.png'); background-repeat: no-repeat; background-position: top center">
+        <img id="humanCheck" class="check-img" src="img/checkmark.png"> <br> <br>
+        Human Rights
+      </div>
     </div>
 
     <div class="row">
-        <div class="col col-offset-25 col-33 interest">
-          <button onclick="toggleCheck(event)">
-            <img id="justice" class="interest-img" src="img/justice.png">
-            <img id="justiceCheck" class="check-img" src="img/checkmark.png"> <br>
-            Justice
-          </button>
-        </div>
-        <div class="col col-33 interest">
-          <button onclick="toggleCheck(event)">
-            <img id="sports" class="interest-img" src="img/sports.png">
-            <img id="sportsCheck" class="check-img" src="img/checkmark.png"> <br>
-            Sports
-          </button>
-        </div>
+      <div id="justice" onclick="toggleCheck(event)" class="col col-offset-25 col-33 interest"
+           style="background-image: url('img/justice.png'); background-repeat: no-repeat; background-position: top center">
+        <img id="justiceCheck" class="check-img" src="img/checkmark.png"> <br> <br>
+        Justice
+      </div>
+      <div id="sports" onclick="toggleCheck(event)" class="col col-offset-10 col-33 interest"
+           style="background-image: url('img/sports.png'); background-repeat: no-repeat; background-position: top center">
+        <img id="sportsCheck" class="check-img" src="img/checkmark.png"> <br> <br>
+        Sports
+      </div>
     </div>
 
     <div class="row">
-        <div class="col col-offset-25 col-33 interest">
-          <button onclick="toggleCheck(event)">
-            <img id="media" class="interest-img" src="img/media.png">
-            <img id="mediaCheck" class="check-img" src="img/checkmark.png"> <br>
-            Media
-          </button>
-        </div>
-        <div class="col col-33 interest">
-          <button onclick="toggleCheck(event)">
-            <img id="refugees" class="interest-img" src="img/refugee.png">
-            <img id="refugeesCheck" class="check-img" src="img/checkmark.png"> <br>
-            Refugees
-          </button>
-        </div>
+      <div id="media" onclick="toggleCheck(event)" class="col col-offset-25 col-33 interest"
+           style="background-image: url('img/media.png'); background-repeat: no-repeat; background-position: top center">
+        <img id="mediaCheck" class="check-img" src="img/checkmark.png"> <br> <br>
+        Media
+      </div>
+      <div id="refugee" onclick="toggleCheck(event)" class="col col-offset-10 col-33 interest"
+           style="background-image: url('img/refugee.png'); background-repeat: no-repeat; background-position: top center">
+        <img id="refugeeCheck" class="check-img" src="img/checkmark.png"> <br> <br>
+        Refugees
+      </div>
     </div>
     <div class="row">
-        <div class="col col-offset-25 col-33 interest">
-          <button onclick="toggleCheck(event)">
-            <img id="elderly" class="interest-img" src="img/senior.png">
-            <img id="elderlyCheck" class="check-img" src="img/checkmark.png"> <br>
-            Elderly
-          </button>
-        </div>
-        <div class="col col-33 interest">
-          <button onclick="toggleCheck(event)">
-            <img id="handicapped" class="interest-img" src="img/disabled.png">
-            <img id="handicappedCheck" class="check-img" src="img/checkmark.png"> <br>
-            Handicapped
-          </button>
-        </div>
+      <div id="senior" onclick="toggleCheck(event)" class="col col-offset-25 col-33 interest"
+           style="background-image: url('img/senior.png'); background-repeat: no-repeat; background-position: top center">
+        <img id="seniorCheck" class="check-img" src="img/checkmark.png"> <br> <br>
+        Elderly
+      </div>
+      <div id="disabled" onclick="toggleCheck(event)" class="col col-offset-10 col-33 interest"
+           style="background-image: url('img/disabled.png'); background-repeat: no-repeat; background-position: top center">
+        <img id="disabledCheck" class="check-img" src="img/checkmark.png"> <br> <br>
+        Handicapped
+      </div>
     </div>
     <div class="row">
-        <div class="col col-offset-25 col-33 interest">
-          <button onclick="toggleCheck(event)">
-            <img id="art" class="interest-img" src="img/art.png">
-            <img id="artCheck" class="check-img" src="img/checkmark.png"> <br>
-            Art
-          </button>
-        </div>
-        <div class="col col-33 interest">
-          <button onclick="toggleCheck(event)">
-            <img id="lgbt" class="interest-img" src="img/lgbt.png">
-            <img id="lgbtCheck" class="check-img" src="img/checkmark.png"> <br>
-            LGBT
-          </button>
-        </div>
+      <div id="art" onclick="toggleCheck(event)" class="col col-offset-25 col-33 interest"
+           style="background-image: url('img/art.png'); background-repeat: no-repeat; background-position: top center">
+        <img id="artCheck" class="check-img" src="img/checkmark.png"> <br> <br>
+        Art
+      </div>
+      <div id="lgbt" onclick="toggleCheck(event)" class="col col-offset-10 col-33 interest"
+           style="background-image: url('img/lgbt.png'); background-repeat: no-repeat; background-position: top center">
+        <img id="lgbtCheck" class="check-img" src="img/checkmark.png"> <br> <br>
+        LGBT
+      </div>
     </div>
 
         <div class="row">
