@@ -246,6 +246,13 @@ p{
 	z-index: 999;
  }
 
+ /*Location*/
+.row-location>div{
+	margin-bottom: 20px;
+}
+.row-location .dropdown-toggle{
+
+}
  #map{
  	height: 300px;
  }
@@ -261,4 +268,65 @@ p{
 .radio{
 	text-align: left;
 	font-size: 1.3em;
+}
+/*Interests*/
+.interest-icon{
+	height: 160px;
+	padding-top: 40px;
+	color:blue;
+	margin-bottom: 20px;
+}
+#interest-animals{
+	background: url('../img/interest-icons/animals.png') center / cover;
+}
+#interest-art{
+	background: url('../img/interest-icons/art.png') center / cover;
+}
+#interest-disabled{
+	background: url('../img/interest-icons/disabled.png') center / cover;
+}
+#interest-environment{
+	background: url('../img/interest-icons/environment.png') center / cover;
+}
+#interest-faith{
+	background: url('../img/interest-icons/faith.png') center / cover;
+}
+#interest-healthcare{
+	background: url('../img/interest-icons/healthcare.png') center / cover;
+}
+#interest-human{
+	background: url('../img/interest-icons/human.png') center / cover;
+}
+#interest-hunger{
+	background: url('../img/interest-icons/hunger.png') center / cover;
+}
+#interest-justice{
+	background: url('../img/interest-icons/justice.png') center / cover;
+}
+#interest-kids{
+	background: url('../img/interest-icons/kids.png') center / cover;
+}
+#interest-lgbt{
+	background: url('../img/interest-icons/lgbt.png') center / cover;
+}
+#interest-media{
+	background: url('../img/interest-icons/media.png') center / cover;
+}
+#interest-outdoors{
+	background: url('../img/interest-icons/outdoors.png') center / cover;
+}
+#interest-refugee{
+	background: url('../img/interest-icons/refugee.png') center / cover;
+}
+#interest-senior{
+	background: url('../img/interest-icons/senior.png') center / cover;
+}
+#interest-sports{
+	background: url('../img/interest-icons/sports.png') center / cover;
+}
+#interest-technology{
+	background: url('../img/interest-icons/technology.png') center / cover;
+}
+#interest-tutoring{
+	background: url('../img/interest-icons/tutoring.png') center / cover;
 }
