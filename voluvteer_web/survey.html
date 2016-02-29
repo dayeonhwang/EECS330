@@ -8,8 +8,9 @@
         </title>
 
         <!-- <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" /> -->
-        <link rel="stylesheet" type="text/css" href="css/examples.css" />
+        
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/examples.css" />
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 
 
@@ -18,13 +19,14 @@
         <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div id="fullpage">
+        <div class="container-fluid" id="fullpage">
             <div class="section active" id="section0">
-                <h1>Hi!</h1>
-                <p>We're going to ask a few questions to find volunteer opportunities that best match your interests!</p>
-                <p>Please Scroll down!</p>
-                <a href="#section1" class="btn btn-primary btn-lg active" role="button">Next</a>
+                <h1>Hi Volunteer!</h1>
+                <h2>We're going to ask a few questions to find volunteer opportunities that best match your interests!</h2>
+                <h2>Please Scroll down or Click Next Below!</h2>
+                <a href="#section1" class="btn btn-primary btn-lg" role="button">Next</a>
             </div>
+            <div class="section-divider"></div>
             <div class="section" id="section1">
                 <!-- Location Survey -->
                 
@@ -53,11 +55,12 @@
                         <div class="clearfix"></div>
                         <div class="col-xs-offset-4 col-xs-4" id="map"></div>
                         <div class="clearfix"></div>
-                        <a href="#section0" class="btn btn-primary btn-lg active" role="button">Prev</a>
-                        <a href="#section2" class="btn btn-primary btn-lg active" role="button">Next</a>
+                        <a href="#section0" class="btn btn-primary btn-lg" role="button">Prev</a>
+                        <a href="#section2" class="btn btn-primary btn-lg" role="button">Next</a>
                     </div>
                 </div>
             </div>
+            <div class="section-divider"></div>
             <div class="section" id="section2">
               <h1>Time</h1>
               <div class="row">
@@ -111,10 +114,15 @@
                     </label>
                   </div>
                 </div>
+                <div class="clearfix"></div>
+                <a href="#section1" class="btn btn-primary btn-lg" role="button">Prev</a>
+                <a href="#section3" class="btn btn-primary btn-lg" role="button">Next</a>
               </div>
             </div>
+            <div class="section-divider"></div>
             <div class="section" id="section3">
               <h1>Interests</h1>
+              <h2>Please click your interests below</h2>
               <div class="row col-xs-offset-1 col-xs-10">
                 <div class="col-xs-2 interest-icon" id="interest-animals">
                   <i class="fa fa-check fa-5x"></i>
@@ -189,9 +197,15 @@
                    <span>Tutoring</span>
                 </div>
               </div>
+              <div class="clearfix"></div>
+              <a href="#section2" class="btn btn-primary btn-lg" role="button">Prev</a>
+              <a href="#section4" class="btn btn-primary btn-lg" role="button">Next</a>
             </div>
+            <div class="section-divider"></div>
             <div class="section" id="section4">
-              <h1>Thank you!</h1>
+              <h1>Thank you for Filling out the Survey!</h1>
+              <h2>Please confirm your answers above by clicking below if you are sure of your answers.</h2>
+              <a href="#" class="btn btn-success btn-lg" role="button">Submit</a>
             </div>
         </div>
     <script>
