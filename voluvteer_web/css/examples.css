@@ -258,3 +258,7 @@ p{
 .dropdown-menu{
 	width: 100%;
 }
+.radio{
+	text-align: left;
+	font-size: 1.3em;
+}
