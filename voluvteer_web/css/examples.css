@@ -273,8 +273,16 @@ p{
 .interest-icon{
 	height: 160px;
 	padding-top: 40px;
-	color:blue;
 	margin-bottom: 20px;
+	color:#3498db;
+}
+.interest-icon i{
+	display: none;	
+}
+.interest-icon span{
+	font-size: 2.0em;
+	background-color: rgba(0,0,0,0.6);
+
 }
 #interest-animals{
 	background: url('../img/interest-icons/animals.png') center / cover;

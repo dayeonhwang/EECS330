@@ -125,75 +125,75 @@ sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
                       <div class="row col-xs-offset-1 col-xs-10">
                         <div class="col-xs-2 interest-icon" id="interest-animals">
                           <i class="fa fa-check fa-5x"></i>
-
+                          <span>Animals</span>
                         </div>
                         <div class="col-xs-2 interest-icon" id="interest-art">
                           <i class="fa fa-check fa-5x"></i>
-
+                           <span>Art</span>
                         </div>
                         <div class="col-xs-2 interest-icon" id="interest-disabled">
                           <i class="fa fa-check fa-5x"></i>
-
+                           <span>Disabled</span>
                         </div>
                         <div class="col-xs-2 interest-icon" id="interest-environment">
                           <i class="fa fa-check fa-5x"></i>
-
+                           <span>Environment</span>
                         </div>
                         <div class="col-xs-2 interest-icon" id="interest-faith">
                           <i class="fa fa-check fa-5x"></i>
-
+                           <span>Faith</span>
                         </div>
                         <div class="col-xs-2 interest-icon" id="interest-healthcare">
                           <i class="fa fa-check fa-5x"></i>
-
+                           <span>Healthcare</span>
                         </div>
                         <div class="col-xs-2 interest-icon" id="interest-human">
                           <i class="fa fa-check fa-5x"></i>
-
+                           <span>Human</span>
                         </div>
                         <div class="col-xs-2 interest-icon" id="interest-hunger">
                           <i class="fa fa-check fa-5x"></i>
-
+                           <span>Hunger</span>
                         </div>
                         <div class="col-xs-2 interest-icon" id="interest-justice">
                           <i class="fa fa-check fa-5x"></i>
-
+                           <span>Justice</span>
                         </div>
                         <div class="col-xs-2 interest-icon" id="interest-kids">
                           <i class="fa fa-check fa-5x"></i>
-
+                           <span>Kids</span>
                         </div>
                         <div class="col-xs-2 interest-icon" id="interest-lgbt">
                           <i class="fa fa-check fa-5x"></i>
-
+                           <span>LGBT</span>
                         </div>
                         <div class="col-xs-2 interest-icon" id="interest-media">
                           <i class="fa fa-check fa-5x"></i>
-
+                           <span>Media</span>
                         </div>
                         <div class="col-xs-2 interest-icon" id="interest-outdoors">
                           <i class="fa fa-check fa-5x"></i>
-
+                           <span>Outdoors</span>
                         </div>
                         <div class="col-xs-2 interest-icon" id="interest-refugee">
                           <i class="fa fa-check fa-5x"></i>
-
+                           <span>Refugee</span>
                         </div>
                         <div class="col-xs-2 interest-icon" id="interest-senior">
                           <i class="fa fa-check fa-5x"></i>
-
+                           <span>Senior</span>
                         </div>
                         <div class="col-xs-2 interest-icon" id="interest-sports">
                           <i class="fa fa-check fa-5x"></i>
-
+                           <span>Sports</span>
                         </div>
                         <div class="col-xs-2 interest-icon" id="interest-technology">
                           <i class="fa fa-check fa-5x"></i>
-
+                           <span>Technology</span>
                         </div>
                         <div class="col-xs-2 interest-icon" id="interest-tutoring">
                           <i class="fa fa-check fa-5x"></i>
-
+                           <span>Tutoring</span>
                         </div>
                       </div>
                     </div>
@@ -305,6 +305,15 @@ sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
           $("#dropdownMenu-frequency").html(selection);
       }); 
       //Interests
+       $(".interest-icon").on("click", function() {
+        var display = $(this).children().first().css( "display");
+        if (display == 'block'){
+          display = 'none';
+        } else {
+          display = 'block';
+        }
+        $(this).children().first().css( "display",display);
+       });
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmPygdIXZcpPrA9Yetgy8P7GLoOoIfc4U&signed_in=true&libraries=places&callback=initAutocomplete"
         async defer></script>
