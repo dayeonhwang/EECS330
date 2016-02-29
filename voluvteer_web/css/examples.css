@@ -242,3 +242,7 @@ p{
 	z-index: 999;
  }
 
+ #map{
+ 	height: 300px;
+ }
+
