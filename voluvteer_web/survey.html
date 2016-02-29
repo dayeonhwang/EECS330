@@ -11,8 +11,9 @@
         <link rel="stylesheet" type="text/css" href="css/examples.css" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 
         <script type="text/javascript" src="js/jquery.fullPage.js"></script>
         <script type="text/javascript">
@@ -36,7 +37,7 @@ sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
                         <!-- Location Survey -->
                         <div class="slide active">
                         <!-- TODO: Align this in center -->
-                            <p>Location</p>
+                            <h1>Location</h1>
                             <div class="row">
                                 <div class="col-xs-offset-4 col-xs-4 input-group input-group-lg">
                                 <input id="autocomplete" placeholder="Your Address"
@@ -47,11 +48,46 @@ sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
                             </div>
                         </div>
                     </div>
-                    <div class="section" id="section2"><h1>....</h1></div>
+                    <div class="section" id="section2">
+                      <h1>Time</h1>
+                      <div class="row">
+                        <span class="col-xs-offset-3 col-xs-3 dropdown-label">Total Time (hrs/wk)</span>
+                        <div class="col-xs-3">
+                          <div class="dropdown" id="dropdown-totalTime">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu-totalTime" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                              1-5 Hours
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu-totalTime">
+                              <li><a>1-5 Hours</a></li>
+                              <li><a>5-10 Hours</a></li>
+                              <li><a>10-20 Hours</a></li>
+                              <li><a>20 Hours or more</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <span class="col-xs-offset-3 col-xs-3 dropdown-label">Frequency</span>
+                        <div class="col-xs-3">
+                          <div class="dropdown" id="dropdown-frequency">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu-frequency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                              1 time a week
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenup-frequency">
+                              <li><a>2 times a week</a></li>
+                              <li><a>3 times a week</a></li>
+                              <li><a>More than 3 times a week</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="section" id="section3"><h1>........</h1></div>
                 </div>
 
     <script>
+      //==============Location=========
       var placeSearch, autocomplete, map, marker;
       var componentForm = {
         street_number: 'short_name',
@@ -137,6 +173,17 @@ sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
           });
         }
       }
+      //=================Time============
+      $("#dropdown-totalTime").on("click", "li a", function() {
+          var selection = $(this).text();
+          console.log(selection);
+          $("#dropdownMenu-totalTime").html(selection);
+      });
+      $("#dropdown-frequency").on("click", "li a", function() {
+          var selection = $(this).text();
+          console.log(selection);
+          $("#dropdownMenu-frequency").html(selection);
+      }); 
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmPygdIXZcpPrA9Yetgy8P7GLoOoIfc4U&signed_in=true&libraries=places&callback=initAutocomplete"
         async defer></script>
