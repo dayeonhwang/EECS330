@@ -7,7 +7,7 @@
             Voluvteer: Find a volunteer/volunteering opportunity for yourself!
         </title>
 
-        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+        <!-- <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" /> -->
         <link rel="stylesheet" type="text/css" href="css/examples.css" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
@@ -16,191 +16,184 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-
-        <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                    $('#fullpage').fullpage({
-sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
-});
-                    });
-                </script>
-
-            </head>
-            <body>
-
-                <div id="fullpage">
-                    <div class="section active" id="section0">
-                        <h1>Hi!</h1>
-                        <p>We're going to ask a few questions to find volunteer opportunities that best match your interests!</p>
-                        <p>Please Scroll down!</p>
-                    </div>
-                    <div class="section" id="section1">
-                        <!-- Location Survey -->
-                        <div class="slide active">
-                        <!-- TODO: Align this in center -->
-                            <h1>Location</h1>
-                            <div class="row row-location">
-                                <div class="col-xs-offset-4 col-xs-4 input-group input-group-lg">
-                                <input id="autocomplete" placeholder="Your Address"
-                                       onFocus="geolocate()" class="form-control" type="text"></input>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="col-xs-offset-4 col-xs-4" id="col-distance">
-                                  <div class="dropdown" id="dropdown-distance">
-                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu-distance" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                      1 Mile
-                                      <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu-distance">
-                                      <li><a>1 Mile</a></li>
-                                      <li><a>5 Miles</a></li>
-                                      <li><a>10 Miles</a></li>
-                                      <li><a>20 Miles</a></li>
-                                    </ul>
-                                  </div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="col-xs-offset-4 col-xs-4" id="map"></div>
-                            </div>
+    </head>
+    <body>
+        <div id="fullpage">
+            <div class="section active" id="section0">
+                <h1>Hi!</h1>
+                <p>We're going to ask a few questions to find volunteer opportunities that best match your interests!</p>
+                <p>Please Scroll down!</p>
+                <a href="#section1" class="btn btn-primary btn-lg active" role="button">Next</a>
+            </div>
+            <div class="section" id="section1">
+                <!-- Location Survey -->
+                
+                <!-- TODO: Align this in center -->
+                    <h1>Location</h1>
+                    <div class="row row-location">
+                        <div class="col-xs-offset-4 col-xs-4 input-group input-group-lg">
+                        <input id="autocomplete" placeholder="Your Address"
+                               onFocus="geolocate()" class="form-control" type="text"></input>
                         </div>
-                    </div>
-                    <div class="section" id="section2">
-                      <h1>Time</h1>
-                      <div class="row">
-                        <span class="col-xs-offset-3 col-xs-3 dropdown-label">Total Time (hrs/wk)</span>
-                        <div class="col-xs-3">
-                          <div class="dropdown" id="dropdown-totalTime">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu-totalTime" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              1-5 Hours
+                        <div class="clearfix"></div>
+                        <div class="col-xs-offset-4 col-xs-4" id="col-distance">
+                          <div class="dropdown" id="dropdown-distance">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu-distance" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                              1 Mile
                               <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu-totalTime">
-                              <li><a>1-5 Hours</a></li>
-                              <li><a>5-10 Hours</a></li>
-                              <li><a>10-20 Hours</a></li>
-                              <li><a>20 Hours or more</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu-distance">
+                              <li><a>1 Mile</a></li>
+                              <li><a>5 Miles</a></li>
+                              <li><a>10 Miles</a></li>
+                              <li><a>20 Miles</a></li>
                             </ul>
                           </div>
                         </div>
                         <div class="clearfix"></div>
-                        <span class="col-xs-offset-3 col-xs-3 dropdown-label">Frequency</span>
-                        <div class="col-xs-3">
-                          <div class="dropdown" id="dropdown-frequency">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu-frequency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              1 time a week
-                              <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenup-frequency">
-                              <li><a>1 time a week</a></li>
-                              <li><a>2 times a week</a></li>
-                              <li><a>3 times a week</a></li>
-                              <li><a>More than 3 times a week</a></li>
-                            </ul>
-                          </div>
-                        </div>
+                        <div class="col-xs-offset-4 col-xs-4" id="map"></div>
                         <div class="clearfix"></div>
-                        <span class="col-xs-offset-3 col-xs-3 dropdown-label">Flexibility</span>
-                        <div class="col-xs-3">
-                          <div class="radio">
-                            <label>
-                              <input type="radio" name="optradio">Low (Fixed Time)
-                            </label>
-                          </div>
-                          <div class="radio">
-                            <label>
-                              <input type="radio" name="optradio">Medium
-                            </label>
-                          </div>
-                          <div class="radio">
-                            <label>
-                              <input type="radio" name="optradio">High (Varies Session to Session)
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="section" id="section3">
-                      <h1>Interests</h1>
-                      <div class="row col-xs-offset-1 col-xs-10">
-                        <div class="col-xs-2 interest-icon" id="interest-animals">
-                          <i class="fa fa-check fa-5x"></i>
-                          <span>Animals</span>
-                        </div>
-                        <div class="col-xs-2 interest-icon" id="interest-art">
-                          <i class="fa fa-check fa-5x"></i>
-                           <span>Art</span>
-                        </div>
-                        <div class="col-xs-2 interest-icon" id="interest-disabled">
-                          <i class="fa fa-check fa-5x"></i>
-                           <span>Disabled</span>
-                        </div>
-                        <div class="col-xs-2 interest-icon" id="interest-environment">
-                          <i class="fa fa-check fa-5x"></i>
-                           <span>Environment</span>
-                        </div>
-                        <div class="col-xs-2 interest-icon" id="interest-faith">
-                          <i class="fa fa-check fa-5x"></i>
-                           <span>Faith</span>
-                        </div>
-                        <div class="col-xs-2 interest-icon" id="interest-healthcare">
-                          <i class="fa fa-check fa-5x"></i>
-                           <span>Healthcare</span>
-                        </div>
-                        <div class="col-xs-2 interest-icon" id="interest-human">
-                          <i class="fa fa-check fa-5x"></i>
-                           <span>Human</span>
-                        </div>
-                        <div class="col-xs-2 interest-icon" id="interest-hunger">
-                          <i class="fa fa-check fa-5x"></i>
-                           <span>Hunger</span>
-                        </div>
-                        <div class="col-xs-2 interest-icon" id="interest-justice">
-                          <i class="fa fa-check fa-5x"></i>
-                           <span>Justice</span>
-                        </div>
-                        <div class="col-xs-2 interest-icon" id="interest-kids">
-                          <i class="fa fa-check fa-5x"></i>
-                           <span>Kids</span>
-                        </div>
-                        <div class="col-xs-2 interest-icon" id="interest-lgbt">
-                          <i class="fa fa-check fa-5x"></i>
-                           <span>LGBT</span>
-                        </div>
-                        <div class="col-xs-2 interest-icon" id="interest-media">
-                          <i class="fa fa-check fa-5x"></i>
-                           <span>Media</span>
-                        </div>
-                        <div class="col-xs-2 interest-icon" id="interest-outdoors">
-                          <i class="fa fa-check fa-5x"></i>
-                           <span>Outdoors</span>
-                        </div>
-                        <div class="col-xs-2 interest-icon" id="interest-refugee">
-                          <i class="fa fa-check fa-5x"></i>
-                           <span>Refugee</span>
-                        </div>
-                        <div class="col-xs-2 interest-icon" id="interest-senior">
-                          <i class="fa fa-check fa-5x"></i>
-                           <span>Senior</span>
-                        </div>
-                        <div class="col-xs-2 interest-icon" id="interest-sports">
-                          <i class="fa fa-check fa-5x"></i>
-                           <span>Sports</span>
-                        </div>
-                        <div class="col-xs-2 interest-icon" id="interest-technology">
-                          <i class="fa fa-check fa-5x"></i>
-                           <span>Technology</span>
-                        </div>
-                        <div class="col-xs-2 interest-icon" id="interest-tutoring">
-                          <i class="fa fa-check fa-5x"></i>
-                           <span>Tutoring</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="section" id="section4">
-                      <h1>Thank you!</h1>
+                        <a href="#section0" class="btn btn-primary btn-lg active" role="button">Prev</a>
+                        <a href="#section2" class="btn btn-primary btn-lg active" role="button">Next</a>
                     </div>
                 </div>
+            </div>
+            <div class="section" id="section2">
+              <h1>Time</h1>
+              <div class="row">
+                <span class="col-xs-offset-3 col-xs-3 dropdown-label">Total Time (hrs/wk)</span>
+                <div class="col-xs-3">
+                  <div class="dropdown" id="dropdown-totalTime">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu-totalTime" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      1-5 Hours
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu-totalTime">
+                      <li><a>1-5 Hours</a></li>
+                      <li><a>5-10 Hours</a></li>
+                      <li><a>10-20 Hours</a></li>
+                      <li><a>20 Hours or more</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <span class="col-xs-offset-3 col-xs-3 dropdown-label">Frequency</span>
+                <div class="col-xs-3">
+                  <div class="dropdown" id="dropdown-frequency">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu-frequency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      1 time a week
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenup-frequency">
+                      <li><a>1 time a week</a></li>
+                      <li><a>2 times a week</a></li>
+                      <li><a>3 times a week</a></li>
+                      <li><a>More than 3 times a week</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <span class="col-xs-offset-3 col-xs-3 dropdown-label">Flexibility</span>
+                <div class="col-xs-3">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optradio">Low (Fixed Time)
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optradio">Medium
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optradio">High (Varies Session to Session)
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section" id="section3">
+              <h1>Interests</h1>
+              <div class="row col-xs-offset-1 col-xs-10">
+                <div class="col-xs-2 interest-icon" id="interest-animals">
+                  <i class="fa fa-check fa-5x"></i>
+                  <span>Animals</span>
+                </div>
+                <div class="col-xs-2 interest-icon" id="interest-art">
+                  <i class="fa fa-check fa-5x"></i>
+                   <span>Art</span>
+                </div>
+                <div class="col-xs-2 interest-icon" id="interest-disabled">
+                  <i class="fa fa-check fa-5x"></i>
+                   <span>Disabled</span>
+                </div>
+                <div class="col-xs-2 interest-icon" id="interest-environment">
+                  <i class="fa fa-check fa-5x"></i>
+                   <span>Environment</span>
+                </div>
+                <div class="col-xs-2 interest-icon" id="interest-faith">
+                  <i class="fa fa-check fa-5x"></i>
+                   <span>Faith</span>
+                </div>
+                <div class="col-xs-2 interest-icon" id="interest-healthcare">
+                  <i class="fa fa-check fa-5x"></i>
+                   <span>Healthcare</span>
+                </div>
+                <div class="col-xs-2 interest-icon" id="interest-human">
+                  <i class="fa fa-check fa-5x"></i>
+                   <span>Human</span>
+                </div>
+                <div class="col-xs-2 interest-icon" id="interest-hunger">
+                  <i class="fa fa-check fa-5x"></i>
+                   <span>Hunger</span>
+                </div>
+                <div class="col-xs-2 interest-icon" id="interest-justice">
+                  <i class="fa fa-check fa-5x"></i>
+                   <span>Justice</span>
+                </div>
+                <div class="col-xs-2 interest-icon" id="interest-kids">
+                  <i class="fa fa-check fa-5x"></i>
+                   <span>Kids</span>
+                </div>
+                <div class="col-xs-2 interest-icon" id="interest-lgbt">
+                  <i class="fa fa-check fa-5x"></i>
+                   <span>LGBT</span>
+                </div>
+                <div class="col-xs-2 interest-icon" id="interest-media">
+                  <i class="fa fa-check fa-5x"></i>
+                   <span>Media</span>
+                </div>
+                <div class="col-xs-2 interest-icon" id="interest-outdoors">
+                  <i class="fa fa-check fa-5x"></i>
+                   <span>Outdoors</span>
+                </div>
+                <div class="col-xs-2 interest-icon" id="interest-refugee">
+                  <i class="fa fa-check fa-5x"></i>
+                   <span>Refugee</span>
+                </div>
+                <div class="col-xs-2 interest-icon" id="interest-senior">
+                  <i class="fa fa-check fa-5x"></i>
+                   <span>Senior</span>
+                </div>
+                <div class="col-xs-2 interest-icon" id="interest-sports">
+                  <i class="fa fa-check fa-5x"></i>
+                   <span>Sports</span>
+                </div>
+                <div class="col-xs-2 interest-icon" id="interest-technology">
+                  <i class="fa fa-check fa-5x"></i>
+                   <span>Technology</span>
+                </div>
+                <div class="col-xs-2 interest-icon" id="interest-tutoring">
+                  <i class="fa fa-check fa-5x"></i>
+                   <span>Tutoring</span>
+                </div>
+              </div>
+            </div>
+            <div class="section" id="section4">
+              <h1>Thank you!</h1>
+            </div>
+        </div>
     <script>
       //==============Location=========
       var placeSearch, autocomplete, map, marker;
