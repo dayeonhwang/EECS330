@@ -59,8 +59,9 @@ body{
 	position: relative;
 }
 h1{
-	font-size: 6em;
+	font-size: 3.5em;
 	margin-top: 50px;
+	margin-bottom: 10px;
 }
 h2{
 	font-size: 1.5em;
@@ -253,6 +254,8 @@ h2{
 	z-index: 999;
  }
 
+
+/*Survey*/
  /*Location*/
 .row-location>div{
 	margin-bottom: 20px;
@@ -347,4 +350,10 @@ h2{
 }
 a.btn{
 	margin: 20px 0px;
+}
+/*Event*/
+.icon-volunteer{
+	text-align: center;
+	font-size: 1.8em;
+}
 }
