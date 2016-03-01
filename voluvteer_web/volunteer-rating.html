@@ -1,34 +1,64 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>
-        Voluvteer: Find a volunteer/volunteering opportunity for yourself!
+        Rate the opportunity!
     </title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" /> -->
 
-    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="css/rating.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid" id="fullpage">
+    <div class="section active" id="section0">
+        <h1>Thank you for volunteering at</h1>
+        <h1>the Art Institute of Chicago!</h1>
+        <img id="aic" src='img/aic.jpg'> <br>
+        <a href="#section1" class="btn btn-primary btn-lg" role="button">Rate your experience!</a>
+    </div>
+    <div class="section-divider"></div>
+    <div class="section" id="section1">
+        <h1> Rating </h1>
+        <div id="starRating">
+            <span id="star5" onclick="rate(this.id)">&#9734</span>
+            <span id="star4" onclick="rate(this.id)">&#9734</span>
+            <span id="star3" onclick="rate(this.id)">&#9734</span>
+            <span id="star2" onclick="rate(this.id)">&#9734</span>
+            <span id="star1" onclick="rate(this.id)">&#9734</span>
+        </div>
+        <h1> Comments </h1>
+        <textarea rows="5" cols="28"> </textarea> <br>
+        <a href="#section2" class="btn btn-primary btn-lg" role="button">Rate!</a>
+    </div>
+    <div class="section-divider"></div>
+    <div class="section" id="section2">
+        <h1> Thank you for rating this opportunity! </h1>
+    </div>
+</div>
+<script type="text/javascript">
+    function rate(id) {
+        var rating = id.charAt(4);
+        var str ='';
+        for (var i = 5; i > rating; i--)
+            str += '<span id="star' + i + '" onclick="rate(this.id)">&#9734</span>';
+        for (var i = rating; i > 0; i--)
+            str += '<span id="star' + i + '" onclick="rate(this.id)" style="color: orange">&#9733</span>';
+        $('#starRating').html(str);
+    }
 
-    </head>
 
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-4 col-xs-offset-4">
-                    <img src="img/logo.png" />
-                </div>
-            </div>
+</script>
 
-            <div class="row">
-                <div class="col-xs-offset-4">
-                    <a href="signin-facebook.html">
-                        <button type="button" class="btn btn-primary">Sign In With Facebook</button>
-                    </a>
-                    <a href="signin-email.html">
-                        <button type="button" class="btn btn-success">Sign In With Email</button>
-                    </a>
-                </div>
-            </div>
-    </body>
+</body>
 </html>
