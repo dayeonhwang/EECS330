@@ -264,7 +264,16 @@ h2{
 #logo-text{
 	margin-bottom: 50px;
 }
-
+.index .btn-primary{
+	background-color: #444;
+	color:white;
+}
+.index .btn-primary:hover{
+	background-color: #222;
+}
+.rating h1{
+	margin-bottom: 10px;
+}
 /*Survey*/
  /*Location*/
 .row-location>div{
@@ -368,6 +377,10 @@ a.btn{
 .icon-volunteer{
 	text-align: center;
 	font-size: 1.8em;
+	color: #444;
+}
+.icon-volunteer:hover{
+	color:#337ab7;
 }
 #email-everyone a{
 	color:#444;
