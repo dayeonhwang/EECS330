@@ -6,6 +6,8 @@
     </title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -14,23 +16,29 @@
 
     <body>
         <ol class="breadcrumb">
+             <li>
+                <span class="fa-stack">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <strong class="fa-stack-1x">V</strong>
+                </span>
+            </li>
           <li><a href="index.html">Home</a></li>
           <li class="active">Organizer Sign In</li>
         </ol>
         <div class="container">
+           <h1 id="logo-voluvteer" class="text-center">
+                <span class="fa-stack fa-3x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <strong class="fa-stack-1x">V</strong>
+                </span>
+            </h1>
             <div class="row">
-                <div class="col-xs-4 col-xs-offset-4">
-                    <img src="img/logo.png" />
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xs-offset-4">
-                    <a href="signin-facebook.html">
-                        <button type="button" class="btn btn-primary">Sign In With Facebook</button>
+                <div class="col-xs-offset-4 col-xs-4 text-center">
+                    <a href="signin-facebook.html" class="btn btn-lg btn-primary" role="button">
+                       <i class="fa fa-facebook-square"></i> Sign In With Facebook
                     </a>
-                    <a href="signin-email.html">
-                        <button type="button" class="btn btn-success">Sign In With Email</button>
+                    <a href="signin-email.html" class="btn btn-lg btn-success" role="button">
+                        <i class="fa fa-envelope"></i> Sign In With Email
                     </a>
                 </div>
             </div>

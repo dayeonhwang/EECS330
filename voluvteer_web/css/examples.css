@@ -362,8 +362,13 @@ a.btn{
 	margin: 20px 0px;
 }
 /*Event*/
+.event h1{
+	margin-bottom:20px;
+}
 .icon-volunteer{
 	text-align: center;
 	font-size: 1.8em;
 }
+#email-everyone a{
+	color:#444;
 }
