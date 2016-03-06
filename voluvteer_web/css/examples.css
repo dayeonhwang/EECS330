@@ -264,6 +264,9 @@ h2{
 #logo-text{
 	margin-bottom: 50px;
 }
+.index #div-log-in{
+	border-right: 1px solid #95a5a6;
+}
 .index .btn-primary{
 	background-color: #444;
 	color:white;
