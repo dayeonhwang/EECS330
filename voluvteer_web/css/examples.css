@@ -321,6 +321,7 @@ h2{
 }
 .card-activity{
 	width:33.33333%;
+	display: inline-block;
 }
 a.btn{
 	margin: 20px 0px;
