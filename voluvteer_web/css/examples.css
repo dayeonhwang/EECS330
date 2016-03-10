@@ -314,6 +314,14 @@ h2{
 .interest-icon span{
 	font-size: 1.6em;
 }
+.row-activities{
+	overflow-x: scroll;
+	white-space: nowrap;
+
+}
+.card-activity{
+	width:33.33333%;
+}
 a.btn{
 	margin: 20px 0px;
 }
@@ -332,3 +340,4 @@ a.btn{
 #email-everyone a{
 	color:#444;
 }
+
