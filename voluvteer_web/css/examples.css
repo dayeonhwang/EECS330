@@ -322,6 +322,16 @@ h2{
 .card-activity{
 	width:33.33333%;
 	display: inline-block;
+	margin: 0px 10px;
+}
+.card-activity i{
+	margin: 0px 5px;
+}
+.card-activity i.fa-check-circle{
+	color:#2ecc71;
+}
+.card-activity i.fa-times-circle{
+	color:#e74c3c;
 }
 a.btn{
 	margin: 20px 0px;

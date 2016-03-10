@@ -49,11 +49,14 @@
                             '<i class="fa fa-check-circle fa-2x"></i>' +
                             '<i class="fa fa-times-circle fa-2x"></i>' +
                             '</div></div></div>';
-
-            card_title = '<div class="panel-heading">Panel title test<span class="pull-right"><i class="fa fa-info-circle"></i></span></div>';
-            card_body = '<div class="panel-body">Panel content</div>';
             $.getJSON( "activities.json", function(data) {
-                console.log(data);
+                console.log(data.activities);
+                for(var i = 0; i<data.activities.length; i++){
+                    card_title = '<div class="panel-heading">' + data.activities[i].title + '<span class="pull-right"><i class="fa fa-info-circle"></i></span></div>';
+                    card_body = '<div class="panel-body">' + data.activities[i].body + '</div>';
+                    card_html = card_header + card_title + card_body + card_footer;
+                    $('.row-activities').append(card_html);
+                }
             })
             .done(function() {
                console.log( "Finished" );
@@ -62,8 +65,7 @@
                 var err = textStatus + ", " + error;
                 console.log( "Request Failed: " + err );
              });
-            card_html = card_header + card_title + card_body + card_footer;
-            $('.row-activities').append(card_html);
+           
     </script>
   </body>
 </html>
