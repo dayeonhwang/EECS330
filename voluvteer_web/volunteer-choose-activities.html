@@ -38,82 +38,32 @@
                 <h1>Choose Your Activites!</h1>
             </div>
             <div class="row-activities well">
-                <div class="card-activity">
-                    <div class="panel panel-default panel-primary">
-                      <div class="panel-heading">Panel title<span class="pull-right"><i class="fa fa-info-circle"></i></span></div>
-                      <div class="panel-body">
-                        Panel content
-                      </div>
-                      <div class="panel-footer text-center">
-                        <i class="fa fa-check-circle fa-2x"></i>
-                        <i class="fa fa-times-circle fa-2x"></i>
-                      </div>
-                    </div>
-                </div>
-                <div class="card-activity">
-                    <div class="panel panel-default panel-primary">
-                      <div class="panel-heading">Panel title<span class="pull-right"><i class="fa fa-info-circle"></i></span></div>
-                      <div class="panel-body">
-                        Panel content
-                      </div>
-                      <div class="panel-footer text-center">
-                        <i class="fa fa-check-circle fa-2x"></i>
-                        <i class="fa fa-times-circle fa-2x"></i>
-                      </div>
-                    </div>
-                </div>
-                <div class="card-activity">
-                    <div class="panel panel-default panel-primary">
-                      <div class="panel-heading">Panel title<span class="pull-right"><i class="fa fa-info-circle"></i></span></div>
-                      <div class="panel-body">
-                        Panel content
-                      </div>
-                      <div class="panel-footer text-center">
-                        <i class="fa fa-check-circle fa-2x"></i>
-                        <i class="fa fa-times-circle fa-2x"></i>
-                      </div>
-                    </div>
-                </div>
-                <div class="card-activity">
-                    <div class="panel panel-default panel-primary">
-                      <div class="panel-heading">Panel title<span class="pull-right"><i class="fa fa-info-circle"></i></span></div>
-                      <div class="panel-body">
-                        Panel content
-                      </div>
-                      <div class="panel-footer text-center">
-                        <i class="fa fa-check-circle fa-2x"></i>
-                        <i class="fa fa-times-circle fa-2x"></i>
-                      </div>
-                    </div>
-                </div>
-                <div class="card-activity">
-                    <div class="panel panel-default panel-primary">
-                      <div class="panel-heading">Panel title<span class="pull-right"><i class="fa fa-info-circle"></i></span></div>
-                      <div class="panel-body">
-                        Panel content
-                      </div>
-                      <div class="panel-footer text-center">
-                        <i class="fa fa-check-circle fa-2x"></i>
-                        <i class="fa fa-times-circle fa-2x"></i>
-                      </div>
-                    </div>
-                </div>
-                <div class="card-activity">
-                    <div class="panel panel-default panel-primary">
-                      <div class="panel-heading">Panel title<span class="pull-right"><i class="fa fa-info-circle"></i></span></div>
-                      <div class="panel-body">
-                        Panel content
-                      </div>
-                      <div class="panel-footer text-center">
-                        <i class="fa fa-check-circle fa-2x"></i>
-                        <i class="fa fa-times-circle fa-2x"></i>
-                      </div>
-                    </div>
-                </div>
             </div>
         </div>
     <script>
-     
+        var card_header = '<div class="card-activity">'+
+                            '<div class="panel panel-default panel-primary">',
+            card_title,
+            card_body,
+            card_footer = '<div class="panel-footer text-center">' +
+                            '<i class="fa fa-check-circle fa-2x"></i>' +
+                            '<i class="fa fa-times-circle fa-2x"></i>' +
+                            '</div></div></div>';
+
+            card_title = '<div class="panel-heading">Panel title test<span class="pull-right"><i class="fa fa-info-circle"></i></span></div>';
+            card_body = '<div class="panel-body">Panel content</div>';
+            $.getJSON( "activities.json", function(data) {
+                console.log(data);
+            })
+            .done(function() {
+               console.log( "Finished" );
+             })
+             .fail(function( jqxhr, textStatus, error ) {
+                var err = textStatus + ", " + error;
+                console.log( "Request Failed: " + err );
+             });
+            card_html = card_header + card_title + card_body + card_footer;
+            $('.row-activities').append(card_html);
     </script>
   </body>
 </html>
