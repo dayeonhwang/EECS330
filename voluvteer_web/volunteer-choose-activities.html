@@ -62,7 +62,7 @@
           $.each(interests, function(i, interest) {
             console.log(data.activities["Animals"]);
             card_title = '<div class="panel-heading">' + data.activities[interest].title + '<span class="pull-right"><i class="fa fa-info-circle"></i></span></div>';
-            card_body = '<div class="panel-body">' + data.activities[interest].body + '</div>';
+            card_body = '<div class="panel-body"><img class="img-responsive" src="'+data.activities[interest].href+'"><p>' + data.activities[interest].body + '</p></div>';
             card_html = card_header + card_title + card_body + card_footer;
             console.log(card_html);
             $('.row-activities').append(card_html);

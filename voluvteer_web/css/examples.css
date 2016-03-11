@@ -324,6 +324,13 @@ h2{
 	display: inline-block;
 	margin: 0px 10px;
 }
+.card-activity .panel-body{
+	min-height: 300px;
+}
+.card-activity img{
+	height: 200px;
+	margin-left: 40px;
+}
 .card-activity i{
 	margin: 0px 5px;
 }
@@ -333,8 +340,15 @@ h2{
 .card-activity i.fa-times-circle{
 	color:#e74c3c;
 }
-.card-activity .panel-body {
-	overflow: pre-wrap;
+.card-activity .panel-body p {
+	word-wrap: break-word;
+	word-break: break-all;
+	width: 100%;
+	/*display: block;*/
+	overflow-x: hidden;
+	white-space: pre-wrap;
+	margin-top: 10px;
+	line-height: 1.4em;
 }
 a.btn{
 	margin: 20px 0px;
