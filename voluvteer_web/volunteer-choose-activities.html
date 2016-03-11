@@ -22,6 +22,22 @@
 
     </head>
     <body>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Thank you!</h4>
+              </div>
+              <div class="modal-body">
+                Thank you for signing up for an activity! We will email you the details one week before the activity starts! 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <ol class="breadcrumb">
            <li>
                 <span class="fa-stack">
@@ -52,8 +68,7 @@
                 card_title,
                 card_body,
                 card_footer = '<div class="panel-footer text-center">' +
-                                '<i class="fa fa-check-circle fa-2x"></i>' +
-                                '<i class="fa fa-times-circle fa-2x"></i>' +
+                                '<a data-toggle="modal" data-target="#myModal"><i class="fa fa-check-circle fa-2x"></i></a>' +
                                 '</div></div></div>';
         console.log(interests[0]);
 
@@ -64,7 +79,7 @@
             if (rendered.indexOf(data.activities[interest].body) == -1) {
               rendered.push(data.activities[interest].body);
               card_title = '<div class="panel-heading">' + data.activities[interest].title + '<span class="pull-right"><i class="fa fa-info-circle"></i></span></div>';
-              card_body = '<div class="panel-body"><img class="img-responsive" src="'+data.activities[interest].href+'"><p>' + data.activities[interest].body + '</p></div>';
+              card_body = '<div class="panel-body"><img class="img-responsive center-block" src="'+data.activities[interest].href+'"><p>' + data.activities[interest].body + '</p></div>';
               card_html = card_header + card_title + card_body + card_footer;
               console.log(card_html);
               $('.row-activities').append(card_html);

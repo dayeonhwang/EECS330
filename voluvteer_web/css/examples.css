@@ -329,10 +329,10 @@ h2{
 }
 .card-activity img{
 	height: 200px;
-	margin-left: 40px;
 }
 .card-activity i{
 	margin: 0px 5px;
+	cursor: pointer;
 }
 .card-activity i.fa-check-circle{
 	color:#2ecc71;
