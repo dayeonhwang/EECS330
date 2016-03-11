@@ -1,22 +1,98 @@
-{"activities":[
+{"activities":
     {
-    	"title":"Activity 1",
-    	"body":"body 1",
-    	"href":"Link 1"
-    },
-    {
-    	"title":"Activity 2",
-    	"body":"body 2",
-    	"href":"Link 2"
-    },
-    {
-    	"title":"Activity 3",
-    	"body":"body 3",
-    	"href":"Link 3"
-    },
-    {
-    	"title":"Activity 4",
-    	"body":"body 4",
-    	"href":"Link 4"
+        "Animals" : {
+            "title": "Evanston Animal Shelter",
+            "body":  "Evanston Animal Shelter needs your help! Come help out these poor animals whenever you can. 2x a week, an hour each",
+            "href":  "img/animalshelter.img"
+        },
+        "Art" : {
+            "title": "The Art Institute of Chicago",
+            "body":  "The Art Institute of Chicago is looking for volunteers to help hosting an event for elderly this weekend.",
+            "href":  "img/aic.jpg"
+        },
+        "Elderly": {
+            "title": "The Art Institute of Chicago",
+            "body":  "The Art Institute of Chicago is looking for volunteers to help hosting an event for elderly this weekend.",
+            "href":  "img/aic.jpg"
+        },
+        "Handicapped": {
+            "title": "Lambs Farm",
+            "body":  "A rehabitational shelther for the developmentally disabled is looking for volunteers to talk to our residents once a week.",
+            "href":  "img/lambsfarm.jpg"
+        },
+        "Environment": {
+            "title": "City of Evanston",
+            "body":  "Looking for volunteers to pick up trash and clean up the Evanston environment.",
+            "href":  "img/cityevanston.jpg"
+
+        },
+        "Faith" : {
+            "title": "Sheil Catholic Center",
+            "body":  "Looking for volunteers at the Sheil Catholic Server for weekly serving",
+            "href":  "img/sheil.jpg"
+
+        },
+        "Healthcare" : {
+
+            "title": "Rehabilitation Institute of Chicago",
+            "body":  "RIC is looking for volunteers to talk to our patients.",
+            "href":  "img/ric.jpg"
+        },
+        "Human Rights": {
+            "title": "Human Rights Campaign Illinois",
+            "body":  "The HRC fights for LGBT equality in Illinois alongside state and local groups and lawmakers. We're looking for Spanish translators",
+            "href":  "img/hrci.jpg"
+
+        },
+        "LGBT": {
+            "title": "Human Rights Campaign Illinois",
+            "body":  "The HRC fights for LGBT equality in Illinois alongside state and local groups and lawmakers. We're looking for Spanish translators",
+            "href":  "img/hrci.jpg"
+        },
+        "Hunger" :{
+            "title": "Lake Street Church",
+            "body":  "Looking for dedicated volunteers to help Lake Street Church's weekend event for the homeless, 'Food for Thought'",
+            "href":  "img/lsc.jpg"
+
+        },
+        "Justice": {
+            "title": "Restorative Justice Evanston",
+            "body":  "We're looking for volunteers to talk to youth offenders who have comitted minor criminal offenses",
+            "href":  "img/rje.jpg"
+        },
+        "Kids": {
+            "title": "Restorative Justice Evanston",
+            "body":  "We're looking for volunteers to talk to youth offenders who have comitted minor criminal offenses",
+            "href":  "img/rje.jpg"
+        },
+
+        "Media" : {
+            "title": "Northwestern University Department of RTVF",
+            "body":  "Looking for volunteers to help out with this weekend's film set work.",
+            "href":  "img/rtvf.jpg"
+        },
+        "Outdoor" : {
+            "title": "City of Evanston",
+            "body":  "Looking for volunteers at Evanston Ice Link",
+            "href":  "img/icelink.jpg"
+
+        },
+        "Sports" : {
+            "title": "City of Evanston",
+            "body":  "Looking for volunteers at Evanston Ice Link",
+            "href":  "img/icelink.jpg"
+
+        },
+        "Technology": {
+            "title": "Rehabilitation Institute of Chicago",
+            "body":  "RIC is looking for volunteers to assist with our website development",
+            "href":  "img/ric.jpg"
+
+        },
+        "Tutoring" : {
+            "title": "Northwestern University Athletics",
+            "body":  "Go CATS! NU Athletics is looking for volunteers to tutor our athletes.",
+            "href":  "img/nua.jpg"
+        }
     }
-]}
+}

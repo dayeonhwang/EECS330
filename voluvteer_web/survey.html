@@ -286,7 +286,7 @@
           c[i] = interests[i].children[2].innerHTML;
         }
         console.log(c);
-        $.cookie('interests', c);
+        $.cookie('interests', JSON.stringify(c));
       });
 
       //==============Location=========
