@@ -59,13 +59,16 @@
 
         $.getJSON('activities.json', function(data) {
           console.log(data.activities[interests[0]].title);
-          for (var i = 0; i < interests.length; i++) {
-            card_title = '<div class="panel-heading">' + data.activities[interests[i]].title + '<span class="pull-right"><i class="fa fa-info-circle"></i></span></div>';
-            card_body = '<div class="panel-body">' + data.activities.interests[i].body + '</div>';
+          $.each(interests, function(i, interest) {
+            console.log(data.activities["Animals"]);
+            card_title = '<div class="panel-heading">' + data.activities[interest].title + '<span class="pull-right"><i class="fa fa-info-circle"></i></span></div>';
+            card_body = '<div class="panel-body">' + data.activities[interest].body + '</div>';
             card_html = card_header + card_title + card_body + card_footer;
             console.log(card_html);
-              $('.row-activities').append(card_html);
-          }
+            $('.row-activities').append(card_html);
+          });
+
+
         }).done(function() {
           console.log('finished');
         }).fail(function(jqxhr, textStatus, error) {

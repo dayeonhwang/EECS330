@@ -333,6 +333,9 @@ h2{
 .card-activity i.fa-times-circle{
 	color:#e74c3c;
 }
+.card-activity .panel-body {
+	overflow: pre-wrap;
+}
 a.btn{
 	margin: 20px 0px;
 }
