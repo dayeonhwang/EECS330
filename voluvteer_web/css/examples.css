@@ -334,6 +334,9 @@ h2{
 	margin: 0px 5px;
 	cursor: pointer;
 }
+#modal-home{
+	margin: 0px 0px;
+}
 .card-activity i.fa-check-circle{
 	color:#2ecc71;
 }
