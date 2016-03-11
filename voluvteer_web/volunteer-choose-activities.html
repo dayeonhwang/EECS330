@@ -18,6 +18,8 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
 
+        <script src="js/jquery.cookie.js"></script>
+
     </head>
     <body>
         <ol class="breadcrumb">
@@ -41,6 +43,15 @@
             </div>
         </div>
     <script>
+        $.ajax({
+            url: "http://floating-meadow-24583.herokuapp.com/api/Art",
+            method: "GET",
+            success: function(resp) {
+              var respJSON = JSON.parse(resp);
+                console.log(respJSON['Title']);
+            },
+        });
+        console.log($.cookie("test"));
         var card_header = '<div class="card-activity">'+
                             '<div class="panel panel-default panel-primary">',
             card_title,
