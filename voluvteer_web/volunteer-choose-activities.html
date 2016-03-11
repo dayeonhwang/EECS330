@@ -46,7 +46,7 @@
         
         console.log("test");
         var interests = JSON.parse($.cookie("interests")),
-            activities = [];
+            rendered = [];
             var card_header = '<div class="card-activity">'+
                                 '<div class="panel panel-default panel-primary">',
                 card_title,
@@ -58,14 +58,17 @@
         console.log(interests[0]);
 
         $.getJSON('activities.json', function(data) {
-          console.log(data.activities[interests[0]].title);
           $.each(interests, function(i, interest) {
             console.log(data.activities["Animals"]);
-            card_title = '<div class="panel-heading">' + data.activities[interest].title + '<span class="pull-right"><i class="fa fa-info-circle"></i></span></div>';
-            card_body = '<div class="panel-body"><img class="img-responsive" src="'+data.activities[interest].href+'"><p>' + data.activities[interest].body + '</p></div>';
-            card_html = card_header + card_title + card_body + card_footer;
-            console.log(card_html);
-            $('.row-activities').append(card_html);
+
+            if (rendered.indexOf(data.activities[interest].body) == -1) {
+              rendered.push(data.activities[interest].body);
+              card_title = '<div class="panel-heading">' + data.activities[interest].title + '<span class="pull-right"><i class="fa fa-info-circle"></i></span></div>';
+              card_body = '<div class="panel-body"><img class="img-responsive" src="'+data.activities[interest].href+'"><p>' + data.activities[interest].body + '</p></div>';
+              card_html = card_header + card_title + card_body + card_footer;
+              console.log(card_html);
+              $('.row-activities').append(card_html);
+            }
           });
 
 

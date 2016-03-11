@@ -3,7 +3,7 @@
         "Animals" : {
             "title": "Evanston Animal Shelter",
             "body":  "Evanston Animal Shelter needs your help! Come help out these poor animals whenever you can. 2x a week, an hour each",
-            "href":  "img/animalshelter.img"
+            "href":  "img/animalshelter.jpg"
         },
         "Art" : {
             "title": "The Art Institute of Chicago",
@@ -73,14 +73,14 @@
         },
         "Outdoor" : {
             "title": "City of Evanston",
-            "body":  "Looking for volunteers at Evanston Ice Link",
-            "href":  "img/icelink.jpg"
+            "body":  "Looking for volunteers at Evanston Ice Rink",
+            "href":  "img/icerink.jpg"
 
         },
         "Sports" : {
             "title": "City of Evanston",
-            "body":  "Looking for volunteers at Evanston Ice Link",
-            "href":  "img/icelink.jpg"
+            "body":  "Looking for volunteers at Evanston Ice Rink",
+            "href":  "img/icerink.jpg"
 
         },
         "Technology": {
@@ -92,7 +92,7 @@
         "Tutoring" : {
             "title": "Northwestern University Athletics",
             "body":  "Go CATS! NU Athletics is looking for volunteers to tutor our athletes.",
-            "href":  "img/nua.jpg"
+            "href":  "img/rtvf.jpg"
         }
     }
 }
