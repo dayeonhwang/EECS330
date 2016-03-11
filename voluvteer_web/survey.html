@@ -279,8 +279,15 @@
             </div>
         </div>
     <script>
-        $.cookie("test", 1);
-
+      $('.submit-survey').click(function() {
+        var interests = $('.checked'),
+            c = {};
+        for (var i = 0; i < interests.length; i++) {
+          c[i] = interests[i].children[2].innerHTML;
+        }
+        console.log(c);
+        $.cookie('interests', c);
+      });
 
       //==============Location=========
       var placeSearch, autocomplete, map, marker;
